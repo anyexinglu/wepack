@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "command": "yarn start",
+      // "command": "yarn test src/testing/testing.test.tsx",
+      "name": "yarn start",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+  ]
+
+}

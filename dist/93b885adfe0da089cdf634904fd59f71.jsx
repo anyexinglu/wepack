@@ -44,43 +44,6 @@
   })), null)), directs.$ensure("$3$template$footer"))));
 };
 
-remotes['UseItem'] = props => {
-  fre.useEffect(() => {
-    const params = window.getUrl(window.location.href);
-    onLoad && onLoad(params);
-    return onUnload && onUnload(params);
-  }, []);
-  const {
-    properties: {
-      item
-    },
-    methods: {
-      clickIco,
-      edittodo,
-      clear
-    },
-    onLoad,
-    onUnload
-  } = useComponent(fre.useState({})[1], props, 'use-item');
-  return fre.h(fre.Fragment, null, fre.h(remotes.View, null, fre.h(remotes.View, {
-    class: "list-items",
-    "data-w-5e732a": true
-  }, fre.h(remotes.Icon, {
-    type: item.completed ? 'success' : 'circle',
-    onClick: e => clickIco(e),
-    "data-id": item.id
-  }), fre.h(remotes.Input, {
-    class: `aaa ${item.completed ? 'completed' : ''}`,
-    onKeyDown: e => edittodo(e),
-    "data-id": item.id,
-    value: item.name,
-    "data-w-5e732a": true
-  }), fre.h(remotes.Icon, {
-    type: "clear",
-    onClick: e => clear(e)
-  }))));
-};
-
 remotes['$3$template$footer'] = props => {
   const {
     data: {
@@ -102,7 +65,7 @@ remotes['$3$template$footer'] = props => {
 };
 
 
-    window['berial-cditai'] = {
+    window['berial-bhnzee'] = {
       async bootstrap({host}){
         const div = document.createElement('div');
         div.id = "root";
